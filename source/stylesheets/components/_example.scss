@@ -1,0 +1,27 @@
+.example{
+min-width: 200px;
+min-height: 300px;
+background: $color-janeiro;
+}
+
+.emb-wrapper{
+	@include jd-cont-width(100%, 60%, 40%);
+}
+
+.contain-center{
+	@include jd-cont-width(100%);
+	text-align: center;
+}
+
+
+.page--start{
+	@include jd-outer-container;
+}
+
+.background-red{
+	background: $color-janeiro;
+}
+
+p{
+	padding: 20px 20px;
+}

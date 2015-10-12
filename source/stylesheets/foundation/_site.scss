@@ -1,0 +1,50 @@
+/*
+*
+*  Global Border-Box Override
+*
+*  Unnecessary if Bourbon/Neat already being loaded.
+*
+*  * {
+*    @include box-sizing(border-box);
+*  }
+*
+*/
+
+html {
+  @extend %font-sans-serif-light;
+  color:$color-text;
+  font-size:em(17);
+  p, span{
+    line-height: 30px;
+  }
+  @include media($mq-lap-up) {
+    font-size:em(17);
+  }
+  @include media($mq-desk-up) {
+    font-size:em(17);
+  }
+}
+
+iframe{
+  @include jd-hide-element;
+}
+
+body {
+  @extend %reset-margin;
+  width:100%;
+}
+
+.main-wrapper{
+  @include jd-clearfix;
+}
+
+.chunk{
+  @include span-columns(12 of 12);
+//  @include db-container;
+  @include omega(1n);
+  @include jd-clearfix;
+}
+
+.fill-parent{
+  @include fill-parent-plus;
+}

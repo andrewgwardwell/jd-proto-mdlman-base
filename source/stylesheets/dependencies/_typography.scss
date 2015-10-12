@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700,300italic);
+// Font Families
+%font-family-sans-serif {
+  font-family: 'lato', 'helvetica', 'open-sans', sans-serif;
+}
+
+// Font Weights
+%font-weight-light {
+  font-weight: 300;
+}
+
+%font-weight-semi {
+  font-weight: 500;
+}
+
+%font-weight-bold {
+  font-weight: 700;
+}
+
+// Font Styles
+%font-style-normal {
+  font-style: normal;
+}
+
+%font-style-italic {
+  font-style: italic;
+}
+
+// Font Placeholders
+%font-sans-serif-light {
+  @extend %font-family-sans-serif;
+  @extend %font-weight-light;
+}
+
+%font-sans-serif-semi {
+  @extend %font-family-sans-serif;
+  @extend %font-weight-semi;
+}
+
+%font-sans-serif-bold {
+  @extend %font-family-sans-serif;
+  @extend %font-weight-bold;
+}
+
+
+$base-font-size:1em;
+$base-font-size-palm:16px;
+$base-font-size-lap:16px;
+$base-font-size-desk:16px;
