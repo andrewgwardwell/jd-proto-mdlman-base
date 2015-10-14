@@ -1,12 +1,19 @@
-<div class="component component--list component--list--<%= listType %>">
+<div class="component component--list">
 <% @item_number = *(1..12) %>
-<ul class="list list--example">
+<ul class="list list--example <%= listTypes.join(" ") %>">
     <h4>Example List</h4>
 	<% @item_number.each do |number| %>
 		<li class="list__item list__item--example <%= number%2 == 0 ? 'odd' : 'even' %>"> 
-			<h5>
-				<%= lorem.words 4 %>
-			</h5>	
+			<img src="<%= lorem.image('200x100')%>"/>
+			<div class="list__item__inner">
+				<h5>
+					<%= lorem.words 4 %>
+				</h5>
+				<p>
+					<%= lorem.sentence %>
+				</p>
+			</div>
+	
 		</li>
 	<% end %>
 </ul>

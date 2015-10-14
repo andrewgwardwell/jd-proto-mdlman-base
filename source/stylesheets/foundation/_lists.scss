@@ -21,8 +21,24 @@ ol {
 // Our Lists
 
 .list{
+	img{
+		display: none;
+	}
+	&.images{
+		img{
+			display: block;
+			float: left;
+			max-width: 25%;
+		}
+	}
 	.list__item{
-		
+		width: 100%;
+		display: inline-block;
+		.list__item__inner{
+			max-width: 75%;
+			float: left;
+		}
+
 	}
 
 }

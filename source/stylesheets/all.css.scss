@@ -4,6 +4,11 @@
 // Library: Neat
 @import "dependencies/neat/neat";
 
+// Library: Bitters??
+
+
+
+
 // Dependency: Grid Variables & Mixins
 @import "dependencies/grid";
 
@@ -23,14 +28,14 @@
 @import "foundation/headings";
 //@import "foundation/inline";
 //@import "foundation/inputs";
-//@import "foundation/lists";
+@import "foundation/lists";
 //@import "foundation/media";
 @import "foundation/site";
 //@import "foundation/tables";
 
-//Vendor
-@import "vendor/slick";
-@import "vendor/slick-theme";
+//3rd Party Libs
+@import "foundation/libs/slick";
+@import "foundation/libs/slick-theme";
 
 //Layouts
 @import "layouts/layout--basic-page";

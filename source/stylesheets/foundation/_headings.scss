@@ -48,7 +48,11 @@ h5 {
   @extend %font-sans-serif-semi;
 }
 
-//h6 {
-//  @include heading(6);
-//}
+h6 {
+ @include heading(6);
+}
+
+p{
+  @include heading(6)
+}
 
