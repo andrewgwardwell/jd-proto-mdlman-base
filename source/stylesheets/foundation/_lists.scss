@@ -1,20 +1,28 @@
-//ul {
-//  @extend %reset-list;
-//  @extend %reset-margin;
-//  @extend %reset-padding;
-//
-//  li {
-//    @extend %reset-list;
-//  }
-//}
-//
-//ol {
-//  @extend %reset-list;
-//  @extend %reset-margin;
-//  @extend %reset-padding;
-//
-//  li {
-//    @extend %reset-list;
-//  }
-//}
-//
+ul {
+ @extend %reset-list;
+ @extend %reset-margin;
+ @extend %reset-padding;
+
+ li {
+   @extend %reset-list;
+ }
+}
+
+ol {
+ @extend %reset-list;
+ @extend %reset-margin;
+ @extend %reset-padding;
+
+ li {
+   @extend %reset-list;
+ }
+}
+
+// Our Lists
+
+.list{
+	.list__item{
+		
+	}
+
+}

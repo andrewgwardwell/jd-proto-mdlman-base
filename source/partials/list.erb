@@ -1,0 +1,13 @@
+<div class="component component--list component--list--<%= listType %>">
+<% @item_number = *(1..12) %>
+<ul class="list list--example">
+    <h4>Example List</h4>
+	<% @item_number.each do |number| %>
+		<li class="list__item list__item--example <%= number%2 == 0 ? 'odd' : 'even' %>"> 
+			<h5>
+				<%= lorem.words 4 %>
+			</h5>	
+		</li>
+	<% end %>
+</ul>
+</div>
