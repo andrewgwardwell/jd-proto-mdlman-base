@@ -1,5 +1,5 @@
 
-<div class="component component--slider">
+<div class="component component--slider component--slider--<%= sliderType %>">
 	<% @image_number = *(1..12) %>
 	<% @image_number.each do |number| %>
 		<div class="slide__item <%= number%2 == 0 ? 'odd' : 'even' %>">

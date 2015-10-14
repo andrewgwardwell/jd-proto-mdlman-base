@@ -1,7 +1,11 @@
 
 //layout for page component
 .page--component{
-	@include jd-outer-container;
+	@include jd-container;
+	.row{
+		@include jd-outer-container;
+		padding: 20px 0;
+	}
 	.empty{
 		background: rgba(grey, .2);
 	}

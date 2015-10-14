@@ -4,9 +4,12 @@
 (function($){
 	slick_inst = {
 		init: function(){
-			$('.component--slider').slick({
+			$('.component--slider--one').slick({
 				centerMode: true,
 				dots: true,
+			});
+			$('.component--slider--two').slick({
+				slidesToShow: 3,
 			});
 		}
 	};	
