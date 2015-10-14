@@ -1,11 +1,11 @@
 // Library: Bourbon
 @import "dependencies/bourbon/bourbon";
 
-// Dependency: Grid Variables & Mixins
-@import "dependencies/grid";
-
 // Library: Neat
 @import "dependencies/neat/neat";
+
+// Dependency: Grid Variables & Mixins
+@import "dependencies/grid";
 
 // Dependency: Colors
 @import "dependencies/color";
@@ -28,8 +28,18 @@
 @import "foundation/site";
 //@import "foundation/tables";
 
+//Vendor
+@import "vendor/slick";
+@import "vendor/slick-theme";
+
+//Layouts
+@import "layouts/layout--basic-page";
+@import "layouts/layout--component";
+
 // Fonts
 //@import "fonts/icons";
 
 // Replace development sheet with component sheets on production prep
 @import "components/example";
+@import "components/grid-example";
+@import "components/slider";

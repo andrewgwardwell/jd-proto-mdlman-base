@@ -1,0 +1,37 @@
+
+//layout for page component
+.page--component{
+	@include jd-outer-container;
+	.empty{
+		background: rgba(grey, .2);
+	}
+	.section{
+		float: left;
+		height: 300px;
+		@include media($mq-lap-up){
+			height: 500px;
+			@include omega(2n);
+		}
+	}
+	.section-1{
+		@include span-columns(12);
+		@include media($mq-lap-up){
+			@include span-columns(6);
+		}
+		@include media($mq-desk-up){
+			@include span-columns(8);
+		}
+	}
+	.section-2{
+		@include span-columns(12);
+		@include media($mq-lap-up){
+			@include span-columns(6);
+		}
+		@include media($mq-desk-up){
+			@include span-columns(4);
+		}
+	}
+	.component{
+		width: 100%;
+	}
+}

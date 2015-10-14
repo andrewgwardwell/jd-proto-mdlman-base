@@ -1,0 +1,9 @@
+
+<div class="component component--slider">
+	<% @image_number = *(1..12) %>
+	<% @image_number.each do |number| %>
+		<div class="slide__item <%= number%2 == 0 ? 'odd' : 'even' %>">
+		 	<img src="<%= lorem.image('900x500', :random_color => true, :text => 'Image Sample') %>" />
+		 </div>
+	<% end %>
+</div>

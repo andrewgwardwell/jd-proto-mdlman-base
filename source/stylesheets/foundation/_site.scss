@@ -38,13 +38,6 @@ body {
   @include jd-clearfix;
 }
 
-.chunk{
-  @include span-columns(12 of 12);
-//  @include db-container;
-  @include omega(1n);
-  @include jd-clearfix;
-}
-
 .fill-parent{
   @include fill-parent-plus;
 }

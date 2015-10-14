@@ -1,0 +1,72 @@
+---
+title: Grid System Demo
+---
+
+<div class="welcome page page--grid">
+<h1>Grid System Example</h1>
+<div class="content-wrap">
+<% @col_number = *(1..12) %>
+<% @col_number.each do |number| %>
+<div class="grid-column <%= number%2 == 0 ? 'odd' : 'even' %>"> <%= number %> </div>
+<% end %>
+<div class="grid-example-container">
+	<div class="blocks block-one">
+		<h3>
+			Mobile: 12 columns
+		</h3>
+		<h3>
+			Tablet: 6 columns
+		</h3>
+		<h3>
+			Desktop: 8 columns
+		</h3>
+	</div>
+	<div class="blocks block-two">
+		<h3>
+			Mobile: 12 columns
+		</h3>
+		<h3>
+			Tablet: 6 columns
+		</h3>
+		<h3>
+			Desktop: 4 columns
+		</h3>
+	</div>
+</div>
+<div class="grid-example-container">
+	<div class="blocks block-three">
+		<h3>
+			Mobile: 12 columns
+		</h3>
+		<h3>
+			Tablet: 5 columns
+		</h3>
+		<h3>
+			Desktop: 7 columns
+		</h3>
+	</div>
+	<div class="blocks block-four">
+		<h3>
+			Mobile: 6 columns
+		</h3>
+		<h3>
+			Tablet: 3 columns
+		</h3>
+		<h3>
+			Desktop: 3 columns
+		</h3>
+	</div>
+		<div class="blocks block-five">
+		<h3>
+			Mobile: 6 columns
+		</h3>
+		<h3>
+			Tablet: 4 columns
+		</h3>
+		<h3>
+			Desktop: 2 columns
+		</h3>
+	</div>
+</div>
+</div>
+</div><!-- .welcome -->

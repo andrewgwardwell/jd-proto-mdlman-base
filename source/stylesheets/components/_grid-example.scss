@@ -1,0 +1,89 @@
+// Grid example 
+
+.grid-column{
+	@include span-columns(12);
+	height: 200px;
+	&.odd{
+		background: $color-janeiro;
+		@include opacity(.4);
+	}
+	&.even {
+		background: $color-black;
+		@include opacity(.4);
+	}
+	@include media($mq-lap-up){
+		@include span-columns(4 of 12);
+		@include omega(3n);
+	}
+	@include media($mq-desk-up){
+		@include span-columns(1 of 12);
+		@include omega-reset(3n);
+		@include omega(12n);
+	}
+}
+
+.grid-example-container{
+	@include jd-outer-container;
+	background: black;
+	float: left;
+	widows: 100%;
+	height: 300px;
+	padding-top: 20px;
+	&:last-child{
+		padding-bottom: 20px;
+	}
+	.blocks{
+		background: white;
+		float: left;
+		@include omega(2n);
+		height: 300px;
+
+	}
+		.block-four, .block-five, .block-three{
+			@include omega-reset(2n);
+		@include omega(3n);
+	}
+	.block-one, .block-two, .block-three{
+		@include span-columns(12);
+
+	}
+
+	.block-four, .block-five{
+		@include span-columns(6);
+	}
+	@include media($mq-lap-up){
+		.block-two, .block-one{
+			@include span-columns(6 of 12);
+		}
+		.block-three{
+			@include span-columns(5);
+		}
+		.block-four{
+			@include span-columns(3);
+		}
+		.block-five{
+			@include span-columns(4);
+		}
+	}
+	@include media($mq-desk-up){
+		.block-two{
+				@include span-columns(4 of 12);
+		}
+
+		.block-one{
+				@include span-columns(8 of 12);
+		}
+		.block-three{
+			@include span-columns(7);
+		}
+		.block-four{
+			@include span-columns(3);
+		}
+		.block-five{
+			@include span-columns(2);
+		}
+
+	}
+
+
+}

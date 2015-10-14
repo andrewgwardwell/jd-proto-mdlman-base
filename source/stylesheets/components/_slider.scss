@@ -1,0 +1,21 @@
+.component--slider{
+	.slick-prev,.slick-next{
+		z-index: 1;
+	}
+	.slick-prev{
+		left: 10px;
+	}
+	.slick-next{
+		right: 10px;
+	}
+	.slick-prev:before, .slick-next:before {
+		color: $color-black;
+	}
+}
+.slide__item{
+	overflow: hidden;
+	img{
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
